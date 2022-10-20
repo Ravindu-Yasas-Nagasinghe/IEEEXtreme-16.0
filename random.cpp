@@ -5,5 +5,8 @@
 using namespace std;
 
 int main(){
-    cout << "[INFO] random tests" << endl;
+    int x;
+    cout << "enter age: ";
+    cin >> x;
+    cout << "\nyour age is " << x;
 }
