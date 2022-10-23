@@ -5,8 +5,5 @@
 using namespace std;
 
 int main(){
-    int x;
-    cout << "enter age: ";
-    cin >> x;
-    cout << "\nyour age is " << x;
+    
 }
