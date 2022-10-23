@@ -3,11 +3,12 @@ T = int(input())
 
 # Process each test case
 for t in range(T):
-    ang= list(int,input().split())
+    ang= list(map(int,input().split()))
     angle=ang[1:]
     answer = 0
     if ang[0]==0:
         answer=1
+        print(answer)
         continue
     for j in range(0,len(angle)) :
         if (angle[j]<0) or (angle[j]>360):
