@@ -1,0 +1,21 @@
+string = input()
+inc = 14
+arr1 = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+arr2 = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+final  = ""
+for i in string:
+    if i in arr1:
+        v = arr1.index(i)
+        v+=inc
+        if v>25:
+            v-=26
+        final+=arr1[v]
+    elif i in arr2:
+        v = arr2.index(i)
+        v+=inc
+        if v>25:
+            v-=26
+        final+=arr2[v]
+    else:
+        final+=i
+print(final)
